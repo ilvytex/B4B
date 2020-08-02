@@ -5,9 +5,9 @@ import React from 'react';
 // import * as restData from "./data/testmap.json";
 import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
-//import { Cardlist } from './Cardlist';
-
-
+import { Cardlist } from './Cardlist';
+import Table from 'react-bootstrap/Table'
+import Map from './Map'
 
 
 export const Home = () => (
@@ -19,11 +19,12 @@ export const Home = () => (
       <Button variant="outline-success">Search</Button>
     </Form>
 
-    <Form inline>
-      <Form.Group >
-        <Form.Control type="string" placeholder="Search..." />
-      </Form.Group>
-    </Form>
+
+
+
+
+    <Map />
+    <Cardlist />
   </div>
 )
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const Map = () => {
 
@@ -81,3 +82,94 @@ export const Map = () => {
 }
 
 export default Map;
+
+// const geolocateStyle = {
+//   float: 'left',
+//   margin: '50px',
+//   padding: '10px'
+// };
+// const Map2 = () => {
+
+//   const [viewport, setViewPort] = useState({
+//     width: 'auto',
+//     height: '300px',
+//     latitude: 41.397,
+//     longitude: 2.158,
+//     zoom: 12
+//   })
+
+
+
+
+//   const _onViewportChange = viewport => setViewPort({ ...viewport, transitionDuration: 2000 })
+
+//   return (
+//     <div style={{ margin: '0 auto' }}>
+//       <h1 style={{ textAlign: 'center', fontSize: '25px', fontWeight: 'bolder' }}>GeoLocator: Click To Find Your Location or click <a href="/Search">here</a> to search for a location</h1>
+//       <ReactMapGL
+//         {...viewport}
+//         mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ"
+//         mapStyle="mapbox://styles/mapbox/streets-v8"
+//         onViewportChange={_onViewportChange}
+//       >
+//         <GeolocateControl
+//           style={geolocateStyle}
+//           positionOptions={{ enableHighAccuracy: true }}
+//           trackUserLocation={true}
+//         />
+//       </ReactMapGL>
+//     </div>
+//   )
+// }
+// export default Map2;
+
+// export const Map3 = new ReactMapGL.Map({
+//   container: 'map',
+//   style: 'mapbox://styles/mapbox/satellite-v9',
+//   zoom: 0
+// });
+
+// Map3.on('load', function () {
+//   const geolocateStyle = {
+//     float: 'left',
+//     margin: '50px',
+//     padding: '10px'
+//   };
+
+
+//   const [viewport, setViewPort] = useState({
+//     width: 'auto',
+//     height: '300px',
+//     latitude: 41.397,
+//     longitude: 2.158,
+//     zoom: 12
+//   })
+
+
+
+
+//   const _onViewportChange = viewport => setViewPort({ ...viewport, transitionDuration: 2000 })
+
+//   return (
+//     <div style={{ margin: '0 auto' }}>
+//       <h1 style={{ textAlign: 'center', fontSize: '25px', fontWeight: 'bolder' }}>GeoLocator: Click To Find Your Location or click <a href="/Search">here</a> to search for a location</h1>
+//       <ReactMapGL
+//         {...viewport}
+//         mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ"
+//         mapStyle="mapbox://styles/mapbox/streets-v8"
+//         onViewportChange={_onViewportChange}
+//       >
+//         <GeolocateControl
+//           style={geolocateStyle}
+//           positionOptions={{ enableHighAccuracy: true }}
+//           trackUserLocation={true}
+//         />
+//       </ReactMapGL>
+//     </div>
+//   )
+// }
+
+// )
+
+
+

@@ -8,8 +8,17 @@ import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-import { Map } from './Map';
-//import { Cardlist } from './Cardlist';
+
+import Row from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Card';
+import myFooter from './Footer';
+import './App.css';
+
+// import { Map2 } from './Map';
+// import { myFooter } from './Footer';
+
+import { Cardlist } from './Cardlist';
 
 
 
@@ -19,7 +28,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Router>
-          <NavigationBar fixed="top" />
+          <NavigationBar />
           <Jumbotron />
           <Layout>
             <Switch>
@@ -31,7 +40,12 @@ class App extends Component {
             </Switch>
           </Layout>
         </Router>
-        <Map />
+        <div className="footer">
+          <Container className="contain" align="bottom" expand="lg" >
+            <myFooter /><br></br>
+myFooter Here
+          </Container>
+        </div>
       </React.Fragment>
 
     );
