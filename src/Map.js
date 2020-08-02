@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
 
 export const Map = () => {
@@ -9,9 +9,11 @@ export const Map = () => {
     latitude: 41.397,
     longitude: 2.158,
     zoom: 12,
-    width: '100vw',
-    height: '500px',
+    width: 'auto',
+    height: '300px',
   })
+
+
 
   const [selectedVenue, setSelectedVenue] = useState(null);
 
@@ -30,13 +32,16 @@ export const Map = () => {
 
   return (
     <div>
-      <ReactMapGL {...viewport}
+      <ReactMapGL {...viewport} maxZoom={18}
         mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ" // {process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle="mapbox://styles/ilvytex/ckd8rdgy20zvd1ipjw1smcjyd"
         onViewportChange={viewport => {
           setViewport(viewport);
         }}
       >
+
+
+
         {restData.features.map(venue => (
           <Marker
             key={venue.properties.Station_id}

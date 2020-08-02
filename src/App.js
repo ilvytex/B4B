@@ -8,7 +8,7 @@ import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-// import { Map } from './Map';
+import { Map } from './Map';
 //import { Cardlist } from './Cardlist';
 
 
@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Router>
-          <NavigationBar />
+          <NavigationBar fixed="top" />
           <Jumbotron />
           <Layout>
             <Switch>
@@ -31,6 +31,7 @@ class App extends Component {
             </Switch>
           </Layout>
         </Router>
+        <Map />
       </React.Fragment>
 
     );
