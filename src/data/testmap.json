@@ -22,8 +22,7 @@
         "Open_data_slot_space_id": "2010110",
         "State": 0,
         "Grouping_id": 2,
-        "Wifi": true,
-        "Slot_space": "1",
+        "Wifi": "ara.cat",
         "Slot_level": -2,
         "Sockets": [
           {

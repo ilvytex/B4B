@@ -8,22 +8,27 @@ import FormControl from 'react-bootstrap/FormControl'
 import { Cardlist } from './Cardlist';
 import Table from 'react-bootstrap/Table'
 import Map from './Map'
+import './Home.css';
 
 
 export const Home = () => (
   <div>
-    <h2>Find a bike friendly venue</h2>
 
     <Form inline>
+
+
+      <span><h4>Find a bike friendly venue</h4></span>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-success">Search</Button>
     </Form>
+    <br></br>
 
 
 
 
 
     <Map />
+    <br></br>
     <Cardlist />
   </div>
 )

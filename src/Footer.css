@@ -1,0 +1,9 @@
+div .myFooter {
+  background-color: #343a40;
+  height: 100px;
+  text-align: center;
+  color: #F8F9FA;
+  min-height: calc(30vh - 70px);
+  padding-top: 20px;
+  margin-top: 40px;
+}

@@ -1,0 +1,50 @@
+.popup {
+  background-color: #F8F9FA;
+  font-size: 1rem;
+  color: #343A40;
+}
+
+.popup h3 {
+  color: #343A40;
+  font-size: 1.2rem;
+}
+
+.popup p {
+  color: darkgray;
+  font-size: 1rem;
+}
+
+.marker-btn {
+  background-color: none;
+  border-radius: 50%;
+  border-color: none;
+  border-style: none;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.marker-btn :focus {
+  border-color: none;
+  border-style: none;
+  border-width: 0;
+}
+
+/* change background and tip color to green */
+
+.apple-popup .mapboxgl-popup-content {
+  background-color: #F8F9FA;
+  border-radius: 8%;
+}
+
+.apple-popup .mapboxgl-popup-tip {
+  border-top-color: #F8F9FA;
+}
+
+/* change background and tip color to yellow */
+
+.banana-popup .mapboxgl-popup-content {
+  background-color: yellow;
+}
+
+.banana-popup .mapboxgl-popup-tip {
+  border-top-color: yellow;
+}

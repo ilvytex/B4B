@@ -17,12 +17,12 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar collapseOnSelect fixed="top" bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/">B4B Barcelona 4 Bicyles
-</Navbar.Brand>
+    <Navbar collapseOnSelect fixed="top" bg="dark" variant="dark" expand="md">
+      <Navbar.Brand href="/">B4B
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="xl-auto">
+        <Nav className="sm-auto">
           <Nav.Item>
             <Nav.Link>
               <Link to="/">Home</Link>
@@ -48,3 +48,7 @@ export const NavigationBar = () => (
     </Navbar>
   </Styles>
 )
+
+
+
+

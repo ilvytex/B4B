@@ -1,25 +1,48 @@
 import React from 'react';
-//import ModalFooter from 'react-bootstrap/ModalFooter';
-import Row from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Card';
+import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+// import Row from 'react-bootstrap/Form';
+// import Col from 'react-bootstrap/Card';
 import './Footer.css';
+// import cafeImage from './assets/header_01.jpeg';
 
+
+const Styles = styled.div`
+ 
+
+
+`;
 
 export const myFooter = () => {
   return (
-    <Container fixed="bottom" bg="dark" variant="dark" expand="lg" fluid>
-      <Row>
-        <Col>1 of 2</Col>
-        <Col>2 of 2</Col>
-      </Row>
-      <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
-      </Row>
-    </Container>
+    // <Container fixed="bottom" bg="dark" variant="dark" expand="lg" fluid>
+    //   <Row>
+    //     <Col>1 of 2</Col>
+    //     <Col>2 of 2</Col>
+    //   </Row>
+    //   <Row>
+    //     <Col>1 of 3</Col>
+    //     <Col>2 of 3</Col>
+    //     <Col>3 of 3</Col>
+    //   </Row>
+    // </Container>
+
+    <Styles>
+
+      <Container>
+        <h1>Footer will go here</h1>
+        <p>social media links and basic contact info</p>
+      </Container>
+      <div>
+        <img height="23px" src="/Email_icons_social.svg"></img>
+        <img height="20px" src="/Instagram_icons_social.svg"></img>
+        <img height="20px" src="/Facebook_icons_social.svg"></img>
+        <img height="20px" src="/Linkedin_icons_social.svg"></img>
+      </div>
+
+    </Styles >
+
+
   )
 
 }

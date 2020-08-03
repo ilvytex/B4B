@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
 import 'mapbox-gl/dist/mapbox-gl.css';
+import './Map.css';
+
+
+
+
 
 export const Map = () => {
 
@@ -10,10 +15,9 @@ export const Map = () => {
     latitude: 41.397,
     longitude: 2.158,
     zoom: 12,
-    width: 'auto',
+    width: '100%',
     height: '300px',
   })
-
 
 
   const [selectedVenue, setSelectedVenue] = useState(null);
@@ -55,7 +59,7 @@ export const Map = () => {
                 setSelectedVenue(venue);
               }}
             >
-              <img src="/local_cafe-black-24dp.svg" alt="Coffee Icon" />
+              <img src="/bike.svg" alt="Bike Icon" />
             </button>
 
           </Marker>
@@ -67,11 +71,13 @@ export const Map = () => {
             longitude={selectedVenue.properties.Station_lng}
             onClose={() => {
               setSelectedVenue(null);
-            }}
+            }} className="apple-popup"
           >
-            <div>
+            <div className="popup">
               <h3>{selectedVenue.properties.Station_name}</h3>
               <p>{selectedVenue.properties.Station_address}</p>
+              <p>{selectedVenue.properties.Wifi}</p>
+              {/* '<a href="http://www.ara.cat" target="_blank" title="Opens in a new window">www.ara.cat</a>', "Slot_space": "1", */}
             </div>
           </Popup>
         ) : null}
@@ -82,6 +88,8 @@ export const Map = () => {
 }
 
 export default Map;
+
+
 
 // const geolocateStyle = {
 //   float: 'left',
