@@ -14,18 +14,11 @@ import './Home.css';
 export const Home = () => (
   <div>
 
-    <Form inline>
-
-
-      <span><h4>Find a bike friendly venue</h4></span>
+    <Form inline >
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
+      <Button variant="dark">Search</Button>
     </Form>
     <br></br>
-
-
-
-
 
     <Map />
     <br></br>

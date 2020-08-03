@@ -1,15 +1,15 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import cafeImage from '../assets/header_01.jpeg';
+import cafeImage from '../assets/header_01.jpg';
 
 const Styles = styled.div`
   .jumbo {
     background: url(${cafeImage}) no-repeat fixed;
     background-size: cover;
     color: white;
-    height: 200;
-    background-position: bottom center;
+    height: 300px;
+    background-position: top center;
     position: relative;
     z-index: -2;
   }
@@ -36,4 +36,6 @@ export const Jumbotron = () => (
       </Container>
     </Jumbo>
   </Styles>
+
+
 )

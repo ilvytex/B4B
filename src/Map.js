@@ -3,6 +3,8 @@ import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
+import Container from 'react-bootstrap/container'
+
 
 
 
@@ -112,20 +114,24 @@ export default Map;
 //   const _onViewportChange = viewport => setViewPort({ ...viewport, transitionDuration: 2000 })
 
 //   return (
-//     <div style={{ margin: '0 auto' }}>
-//       <h1 style={{ textAlign: 'center', fontSize: '25px', fontWeight: 'bolder' }}>GeoLocator: Click To Find Your Location or click <a href="/Search">here</a> to search for a location</h1>
-//       <ReactMapGL
-//         {...viewport}
-//         mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ"
-//         mapStyle="mapbox://styles/mapbox/streets-v8"
-//         onViewportChange={_onViewportChange}
-//       >
-//         <GeolocateControl
-//           style={geolocateStyle}
-//           positionOptions={{ enableHighAccuracy: true }}
-//           trackUserLocation={true}
-//         />
-//       </ReactMapGL>
+//     <div>
+//       <Container>
+//         <div style={{ margin: '0 auto' }}>
+//           <h1 style={{ textAlign: 'center', fontSize: '25px', fontWeight: 'bolder' }}>GeoLocator: Click To Find Your Location or click <a href="/Search">here</a> to search for a location</h1>
+//           <ReactMapGL
+//             {...viewport}
+//             mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ"
+//             mapStyle="mapbox://styles/mapbox/streets-v8"
+//             onViewportChange={_onViewportChange}
+//           >
+//             <GeolocateControl
+//               style={geolocateStyle}
+//               positionOptions={{ enableHighAccuracy: true }}
+//               trackUserLocation={true}
+//             />
+//           </ReactMapGL>
+//         </div>
+//       </Container>
 //     </div>
 //   )
 // }

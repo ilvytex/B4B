@@ -27,20 +27,22 @@ export const myFooter = () => {
     //   </Row>
     // </Container>
 
-    <Styles>
+    <Styles class="navbar fixed-top navbar-dark bg-primary">
 
       <Container>
-        <h1>Footer will go here</h1>
-        <p>social media links and basic contact info</p>
+
       </Container>
-      <div>
-        <img height="23px" src="/Email_icons_social.svg"></img>
-        <img height="20px" src="/Instagram_icons_social.svg"></img>
-        <img height="20px" src="/Facebook_icons_social.svg"></img>
-        <img height="20px" src="/Linkedin_icons_social.svg"></img>
+      <div class="d-flex flex-row text-left">
+
+        <p><strong>Here more info about us</strong><br></br>links and basic contact info ocial media <br></br>links and basic contact<br></br></p>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <img height="24" src="/Instagram_icons_social.svg"></img>
+        <img height="24" src="/Facebook_icons_social.svg"></img>
+        <img height="24" src="/Linkedin_icons_social.svg"></img>
       </div>
 
-    </Styles >
+    </Styles>
 
 
   )
