@@ -3,7 +3,7 @@ import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
-import Container from 'react-bootstrap/container'
+
 
 
 
@@ -18,7 +18,7 @@ export const Map = () => {
     longitude: 2.158,
     zoom: 12,
     width: '100%',
-    height: '300px',
+    height: '350px',
   })
 
 

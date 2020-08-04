@@ -5,24 +5,27 @@ import React from 'react';
 // import * as restData from "./data/testmap.json";
 import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
-import { Cardlist } from './Cardlist';
+import Newlist from './Newlist';
 import Table from 'react-bootstrap/Table'
 import Map from './Map'
 import './Home.css';
 
 
-export const Home = () => (
-  <div>
 
-    <Form inline >
+export const Home = () => (
+  <div inline>
+
+    {/*     <Form inline >
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="dark">Search</Button>
-    </Form>
+    </Form> */}
     <br></br>
 
     <Map />
     <br></br>
-    <Cardlist />
+    <div>
+      <Newlist />
+    </div>
   </div>
 )
 
