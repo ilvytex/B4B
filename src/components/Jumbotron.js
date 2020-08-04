@@ -1,15 +1,15 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import cafeImage from '../assets/header_01a.jpg';
+import cafeImage from '../assets/header_03.jpg';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${cafeImage}) no-repeat fixed;
+    background: url(${cafeImage}) no-repeat;
     background-size: cover;
     color: white;
-    height: 500px;
-    background-position: center center;
+    height: 400px;
+    background-position: top center;
     position: relative;
     z-index: -2;
   }
@@ -18,9 +18,9 @@ const Styles = styled.div`
   }
 
   .overlay {
-    background-color: #000;
-    height:500px;
-    opacity: 0.5;
+    background-color: #333;
+    height:400px;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;

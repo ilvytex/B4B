@@ -28,6 +28,10 @@
   border-width: 0;
 }
 
+.markerphoto {
+  width: 200px;
+}
+
 /* change background and tip color to green */
 
 .apple-popup .mapboxgl-popup-content {

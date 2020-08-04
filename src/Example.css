@@ -11,13 +11,15 @@ div {
   border-radius: 5%;
   margin-top: 30px;
   margin-bottom: 10px;
+  box-shadow: 0 8px 6px -6px #6d6d6d;
 }
 
 div .gridcontainer {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
   grid-template-rows: auto auto auto;
-  column-gap: 20px;
   row-gap: 10px;
   border-style: none;
+  text-align: center;
 }

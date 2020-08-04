@@ -23,7 +23,7 @@ class Example extends Component {
 
 
                       <div>
-                        <a target="_blank" href={feature.properties.URL}>
+                        <a target="blank" href={feature.properties.URL}>
                           <img className="listphoto" src={feature.properties.photo} alt={feature.properties.Sation_name} />
                         </a>
 
@@ -44,7 +44,7 @@ class Example extends Component {
           </div>
           </Col>
         </Row>
-      </Container>
+      </Container >
 
 
     );

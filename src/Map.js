@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
+import ReactMapGL, { Marker, Popup, NavigationControl, GeolocateControl } from 'react-map-gl';
 import * as restData from "./data/testmap.json";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
@@ -18,7 +18,7 @@ export const Map = () => {
     longitude: 2.158,
     zoom: 12,
     width: '100%',
-    height: '350px',
+    height: '40vh',
   })
 
 
@@ -37,8 +37,10 @@ export const Map = () => {
     };
   }, []);
 
+
+
   return (
-    <div>
+    <div style={{ minWidth: 500 }}>
       <ReactMapGL {...viewport} maxZoom={18}
         mapboxApiAccessToken="pk.eyJ1IjoiaWx2eXRleCIsImEiOiJja2RiZDZrdTEwd2RtMnNtaWt4aTZxYWZpIn0.Zu-PxbdmJasdmEY5f1zMTQ" // {process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle="mapbox://styles/ilvytex/ckd8rdgy20zvd1ipjw1smcjyd"
@@ -53,7 +55,8 @@ export const Map = () => {
           <Marker
             key={venue.properties.Station_id}
             latitude={venue.properties.Station_lat}
-            longitude={venue.properties.Station_lng}>
+            longitude={venue.properties.Station_lng}
+          >
 
             <button className="marker-btn"
               onClick={e => {
@@ -67,6 +70,7 @@ export const Map = () => {
           </Marker>
         ))}
 
+
         {selectedVenue ? (
           <Popup
             latitude={selectedVenue.properties.Station_lat}
@@ -76,15 +80,21 @@ export const Map = () => {
             }} className="apple-popup"
           >
             <div className="popup">
+
+              <a target="blank" href={selectedVenue.properties.URL}>
+                <img className="markerphoto" src={selectedVenue.properties.photo} alt={selectedVenue.properties.Sation_name} />
+              </a>
+
               <h3>{selectedVenue.properties.Station_name}</h3>
               <p>{selectedVenue.properties.Station_address}</p>
               <p>{selectedVenue.properties.Wifi}</p>
-              {/* '<a href="http://www.ara.cat" target="_blank" title="Opens in a new window">www.ara.cat</a>', "Slot_space": "1", */}
             </div>
           </Popup>
         ) : null}
+
       </ReactMapGL>
-    </div>
+
+    </div >
   );
 
 }
