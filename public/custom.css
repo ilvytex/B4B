@@ -14,3 +14,15 @@ a {
   max-width: 100vw;
   margin: 0;
 }
+
+marker-btn :focus {
+  border-style: none;
+  outline: none;
+}
+
+.mapboxgl-marker :active {
+  align-content: center;
+  text-align: center;
+  border-style: none;
+  outline: none;
+}

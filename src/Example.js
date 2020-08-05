@@ -11,7 +11,6 @@ console.log(data);
 class Example extends Component {
   render() {
     return (
-
       <Container fluid>
         <Row>
           <Col><div className="gridcontainer">
@@ -20,13 +19,10 @@ class Example extends Component {
                 return (
                   <div key={i} >
                     <div>
-
-
                       <div>
                         <a target="blank" href={feature.properties.URL}>
                           <img className="listphoto" src={feature.properties.photo} alt={feature.properties.Sation_name} />
                         </a>
-
                         <div>
                           <h3>{feature.properties.Station_name}</h3>
                         </div>
@@ -45,8 +41,6 @@ class Example extends Component {
           </Col>
         </Row>
       </Container >
-
-
     );
   }
 }

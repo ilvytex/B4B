@@ -16,16 +16,18 @@
 
 .marker-btn {
   background-color: none;
+  padding: 1px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border-color: none;
-  border-style: none;
+  border-color: rgba(255, 0, 0, 0.199);
+  border-style: solid;
   box-shadow: 0 8px 6px -6px black;
 }
 
-.marker-btn :focus {
-  border-color: none;
-  border-style: none;
-  border-width: 0;
+.marker-btn:active {
+  outline: 0;
+  border: none;
 }
 
 .markerphoto {

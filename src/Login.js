@@ -1,31 +1,23 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import './Login.css';
 
 export const Login = () => (
-  <div>
-    <h2>Log in</h2>
-    <Form>
+  <div className="mysignin" class="text-center" >
+    <Form class="sign-in">
+      <img class="mylogo" src="/B4BLogo.svg" alt="" width="92" height="92"></img>
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-    </Form.Text>
+        <Form.Label class="lead mb-3 font-weight-normal">Please sign in</Form.Label>
+        <Form.Label for="inputEmail" class="sr-only">Email address</Form.Label>
+        <Form.Control type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus />
+        <Form.Control type="password" id="inputPassword" class="form-control" placeholder="Password" required />
+        <Form.Group controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Remember me" />
+        </Form.Group>
+        <Button variant="primary" size="md" type="submit">Sign in</Button>
       </Form.Group>
-
-      <Form.Group controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-  </Button>
     </Form>
-
   </div>
 )
 

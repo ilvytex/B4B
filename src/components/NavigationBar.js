@@ -1,54 +1,51 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
+.navbar-brand-svg{
+opacity:30;
+},
   .navbar {
     background-color: #222;
   }
   a, .navbar-brand, .navbar-nav .nav-link {
-    color: #bbb;
+    color: white;
     &:hover {
-      color: white;
+      color: #D370E3;
+    }
+    &:active {
+      outline:none;
     }
   }
 `;
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar collapseOnSelect fixed="top" bg="dark" variant="dark" expand="md">
-      <Navbar.Brand href="/">B4B
+    <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
+      <Navbar.Brand><a class="navbar-brand-svg" href="/"><img src="/B4BLogo_white.svg" alt="" width="36" height="36"></img></a>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="sm-auto">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="md-auto">
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/">Home</Link>
-            </Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
+
+            <Nav.Link href="/about">About</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/contact">BikeFriends</Link>
-            </Nav.Link>
+
+            <Nav.Link href="/contact">BikeFriends</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/Login">Log In</Link>
-            </Nav.Link>
+
+            <Nav.Link href="/Login">Log In</Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   </Styles>
+
 )
-
-
-
-

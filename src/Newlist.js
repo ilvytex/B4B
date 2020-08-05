@@ -9,7 +9,6 @@ class Newlist extends Component {
     return (
       <div fluid>
         <Example />
-
       </div>
     );
   }

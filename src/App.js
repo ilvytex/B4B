@@ -14,8 +14,6 @@ import './App.css';
 import './Footer.css';
 
 
-
-
 class App extends Component {
   render() {
     return (
@@ -23,6 +21,7 @@ class App extends Component {
         <Router>
           <NavigationBar />
           <Jumbotron />
+
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
