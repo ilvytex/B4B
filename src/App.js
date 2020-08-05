@@ -4,6 +4,7 @@ import { Home } from './Home';
 import { About } from './About';
 import { Contact } from './Contact';
 import { Login } from './Login';
+import { Search } from './Search';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
@@ -25,8 +26,8 @@ class App extends Component {
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/About" component={About} />
+              <Route path="/Search" component={Search} />
               <Route path="/Login" component={Login} />
               <Route component={NoMatch} />
             </Switch>
