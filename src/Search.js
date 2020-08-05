@@ -55,7 +55,7 @@ export const Search = () => (
             <div class="card-body">
               <h1 class="card-title pricing-card-title">Restaurants & Bars</h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... </li>
+                <li>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends.</li>
 
               </ul>
               <button type="button" class="btn btn-lg btn-block btn-outline-primary">Register for free</button>
@@ -65,9 +65,10 @@ export const Search = () => (
             <div class="card-body">
               <h1 class="card-title pricing-card-title">Lodging</h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
+                <li>Free listings</li>
+                <li>"B4B"seal of bike friendly venure</li>
+                <li>Promote your events</li>
+                <li>1 free bagel every full Moon</li>
               </ul>
               <button type="button" class="btn btn-lg btn-block btn-primary">Click here</button>
             </div>
